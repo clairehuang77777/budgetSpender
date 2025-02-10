@@ -1,0 +1,244 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.background {
+  background-color: #f7eadb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vw;
+}
+
+.upper-box {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ec765d;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 150px;
+  box-shadow: 1px 0.8px 6px lightgrey;
+}
+
+.upper-box-left-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lower-box {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 50px;
+  box-shadow: 1px 0.8px 6px lightgrey;
+}
+
+/*bar area */
+.bar1 {
+  grid-area: bar1;
+  height: 100%;
+  align-content: end;
+}
+
+.bar2 {
+  grid-area: bar2;
+  height: 100%;
+  align-content: end;
+}
+
+.bar3 {
+  grid-area: bar3;
+  height: 100%;
+  align-content: end;
+}
+
+.bar4 {
+  grid-area: bar4;
+  height: 100%;
+  align-content: end;
+}
+
+.bar5 {
+  grid-area: bar5;
+  height: 100%;
+  align-content: end;
+}
+
+.bar6 {
+  grid-area: bar6;
+  height: 100%;
+  align-content: end;
+}
+
+.bar7 {
+  grid-area: bar7;
+  height: 100%;
+  align-content: end;
+}
+
+/*bar content area */
+
+.bar1-data {
+  height: 50%;
+}
+
+.bar2-data {
+  height: 50%;
+}
+
+.bar3-data {
+  height: 50%;
+}
+
+.bar4-data {
+  height: 50%;
+}
+
+.bar5-data {
+  height: 50%;
+}
+
+.bar6-data {
+  height: 50%;
+}
+
+.bar7-data {
+  height: 50%;
+}
+
+/*bar content area - style */
+.bar1-data,
+.bar2-data,
+.bar3-data,
+.bar4-data,
+.bar5-data,
+.bar6-data,
+.bar7-data {
+  background-color: #ec765d;
+  border-radius: 5px;
+}
+
+.bar1-data:hover,
+.bar2-data:hover,
+.bar3-data:hover,
+.bar4-data:hover,
+.bar5-data:hover,
+.bar6-data:hover,
+.bar7-data:hover {
+  background-color: #76b5bb;
+}
+
+/*text area */
+.text1 {
+  grid-area: text1;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+.text4 {
+  grid-area: text4;
+}
+
+.text5 {
+  grid-area: text5;
+}
+
+.text6 {
+  grid-area: text6;
+}
+
+.text7 {
+  grid-area: text7;
+}
+
+/*text area - style */
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7 {
+  font-size: 0.8rem;
+  color: grey;
+  justify-self: center;
+}
+
+.grid-container {
+  width: 340px;
+  display: grid;
+  grid-template-areas:
+    "bar1 bar2 bar3 bar4 bar5 bar6 bar7"
+    "text1 text2 text3 text4 text5 text6 text7";
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: 150px auto;
+  grid-gap: 10px;
+}
+
+.div-bar {
+  width: 340px;
+  height: 2px;
+  background-color: lightgrey;
+  justify-self: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.total-this-month {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.lower-total-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.lower-total-right-area {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.upper-total-area-text,
+.compare-to-last-month-num-text,
+.compare-to-last-month-text-text,
+.lower-total-left-area-text,
+.upper-box-left-section-up,
+.upper-box-left-section-down,
+.my-balance-text,
+.my-balance-text-num {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.lower-total-left-area-text {
+  padding-right: 100px;
+}
+
+.spending-last7days-text,
+.grid-container,
+.div-bar-area,
+.total-this-month {
+  padding-left: 30px;
+}
