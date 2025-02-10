@@ -36,7 +36,7 @@ function App() {
         </div>
       </div>
       <div className="upper-box-right-section">
-        <img src=""></img>
+        <img src="/logo.svg" className="logo"></img>
       </div>
     </div>
     <div className="lower-box">
